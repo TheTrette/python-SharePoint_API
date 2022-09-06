@@ -47,7 +47,7 @@ class Site(object):
             if fldr == 'Documents':
                 fldr = 'Shared Documents'
                 
-            regex = r"\/sites\/Pro_Quote_Technology\/{}\/(.*)".format(fldr)
+            regex = r"\/sites\/{}\/(.*)".format(fldr)
             sub_fldrs = [resp['FileRef'] for resp in fldr_resp['value'] if resp['FileRef'] is not None]
             sub_fldrs = [re.search(regex, sub_fldr).group(1) for sub_fldr in sub_fldrs]
 

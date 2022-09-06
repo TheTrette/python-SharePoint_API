@@ -196,36 +196,6 @@ class Lst(object):
 
         return fields
 
-    # def get_item_by_title(self, title_name=None):
-    #     url = "{}/items".format(self.site._list)
-    #     response = requests.get(url, headers=self.site.shrpnt._auth, verify=False).json()
-    #     for result in response['value']:
-    #         if result['Title'] == title_name:
-    #             item_id = result['Id']
-    #
-    #     self.item_id = item_id
-    #
-    #     return Itm(self)
-    #
-    # def create_item_by_title(self, title_value=None):
-    #     url = "{}/items".format(self.site._list)
-    #
-    #     field_data = {'__metadata': {'type': self.list_entity}}
-    #     field_data['Title'] = title_value
-    #
-    #     requests.post(url, data=str(field_data), headers=self.post_header, verify=False)
-    #
-    #     response = requests.get(url, headers=self.site.shrpnt._auth, verify=False).json()
-    #
-    #     for result in response['value']:
-    #         if result['Title'] == title_value:
-    #             item_id = result['Id']
-    #
-    #     self.item_id = item_id
-    #
-    #     print("Item created, 'item_id' is '{}'".format(self.item_id))
-    #
-    #     return Itm(self)
 
     def get_schema(self):
         url = "{}/fields?$filter=Hidden eq false and ReadOnlyField eq false and JSLink ne null and InternalName ne 'Attachments'".format(
