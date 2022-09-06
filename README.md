@@ -26,7 +26,6 @@ To import into your environment:
 
 #### Authorization
 
-Please click below and follow the instructions for generating and obtaining an App Client ID/Secret
 
-[THD SharePoint REST API](https://confluence.homedepot.com/display/NE/Accessing+SharePoint+Rest+API+with+Client+ID+and+Secret)
+
 
